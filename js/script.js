@@ -43,3 +43,30 @@
 // for(i=2024; i >= 1970; i--){
 //     console.log(i);
 // }
+
+// condition
+
+// var age=20
+
+// if (age < 23){
+// console.log("amra biye korte parbo");
+// }else{
+// console.log("amra biye korte parbona");
+// }
+
+// let ami = document.querySelector("h2")
+// console.log(ami.innerHTML);
+
+var input = document.querySelector(".one")
+var btn = document.querySelector(".btn")
+var err = document.querySelector(".err")
+
+btn.addEventListener("click", function(){
+    if(input.value){
+        for( i=1; i <= 10; i++){
+            document.write(input.value + " X " + i + " = " + input.value*i + "<br/>");
+        }
+    }else{
+        err.innerHTML="Please Input Some Value"
+    }
+})
